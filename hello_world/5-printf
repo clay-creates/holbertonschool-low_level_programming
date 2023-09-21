@@ -1,15 +1,14 @@
 #include <stdio.h>
 
 /*
-*
-* Main - entry point to script / program
-*
+* main - entry point
+* 
 * Returns 0 on demand
 *
 */
 
 int main(void)
 {
-printf("with proper grammar, but the outcome is a piece of art,");
+printf("with proper grammar, but the outcome is a piece of art,\n");
 return (0);
 }
