@@ -2,7 +2,7 @@
 
 /*
 *
-* Main - entry point to script / program
+* main - entry point to script / program
 *
 * Returns 0 on demand
 *
