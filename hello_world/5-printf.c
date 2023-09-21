@@ -1,6 +1,5 @@
 #include <stdio.h>
 /**
- *
  * main - entry point to script / program
  *
  * Returns 0 on demand
