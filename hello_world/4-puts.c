@@ -3,7 +3,7 @@
 /**
  * main - entry point
  *
- * return: returns 0 on request
+ * Return: returns 0 on request
  */
 int main(void)
 {
