@@ -2,7 +2,7 @@
 /**
  * main - entry point to script / program
  *
- * Return - returns 0 on demand
+ * Return: returns 0 on demand
  *
  */
 int main(void)
