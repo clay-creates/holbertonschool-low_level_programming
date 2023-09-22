@@ -12,10 +12,10 @@ int main(void)
 
 	i = '0';
 
-	for (i <= '9';
-		i++;)
+	while (i <= '9')
 	{
 		putchar(i + '0');
+		i++;
 
 		if (i != '9')
 		{
