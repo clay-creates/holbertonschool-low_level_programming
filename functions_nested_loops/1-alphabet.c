@@ -25,7 +25,6 @@ void print_alphabet(void)
 	}
 
 	putchar('\n');
-	return ();
 }
 
 int main(void)
