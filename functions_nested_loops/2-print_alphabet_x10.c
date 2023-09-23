@@ -18,14 +18,14 @@ void print_alphabet_x10(void)
 
 	while (target < 10)
 	{
+		letter = 'a';
+
 		while (letter <= 'z')
 		{
 			putchar(letter);
 			letter++;
-			if (letter > 'z')
-				letter = 'a';
-				printf("\n");
 		}
+
 		target++;
 		putchar('\n');
 	}
