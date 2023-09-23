@@ -24,7 +24,7 @@ void print_alphabet_x10(void)
 			letter++;
 			if (letter > 'z')
 				letter = 'a';
-				printf('\n');
+				printf("\n");
 		}
 		target++;
 		putchar('\n');
