@@ -11,8 +11,8 @@ void jack_bauer(void)
 	int hours;
 	int mins;
 
-	hours = 00;
-	mins = 00;
+	hours = "00";
+	mins = "00";
 
 	while (hours <= 24)
 	{
