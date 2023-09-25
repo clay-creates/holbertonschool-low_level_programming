@@ -10,17 +10,12 @@
 
 int _islower(int c)
 {
-	c = _islower(c);
-		if ( c >= 'a'
-			&&
-			c <= 'z')
+		if ( c >= 'a' && c <= 'z')
 		{
-			printf("Its lowercase!");
 			return (1);
 		}
 		else
 		{
-			printf("Its uppercase!");
 			return (0);
 		}
 }
