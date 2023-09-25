@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdio.h>
-
+#include <unistd.h>
 /**
  * _islower - returns a different number if the input is lowercase
  * @c: input of any char
