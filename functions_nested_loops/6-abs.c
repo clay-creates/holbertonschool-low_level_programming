@@ -3,6 +3,8 @@
 /**
  * _abs - computes absolute value of integer
  *
+ * @n: integer being passed to function
+ *
  * Return: returns 0
  */
 
