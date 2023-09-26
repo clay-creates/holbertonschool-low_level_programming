@@ -34,7 +34,6 @@ void times_table(void)
 					_putchar(' ');
 				}
 		}
-				
 			if (sum < 10)
 			{
 				_putchar('0' + sum);
