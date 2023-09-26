@@ -37,7 +37,7 @@ void times_table(void)
 				
 			if (sum < 10)
 			{
-				_putchar('0' + sum)'
+				_putchar('0' + sum);
 			}
 			else
 			{
