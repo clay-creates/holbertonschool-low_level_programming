@@ -11,34 +11,39 @@ void times_table(void)
 	int i;
 	int j;
 	int sum;
-	int target;
 
 	i = 0;
 	j = 0;
-	target = 0;
 
-	while (target < 9)
+	for (i = 0; i <= 9; i++)
 	{
-		while (i <= 9)
+		for (j = 0; j <= 9; j++)
 		{
-			while (j <= 9)
+			sum = i * j;
+			if (j == 0)
 			{
-				sum = i * j;
 				_putchar('0' + sum);
+			}
+			else
+			{
 				_putchar(',');
 				_putchar(' ');
-				j++;
-				if (j > 9)
-				{
-					j = 0;
 				}
+				if (sum < 10)
+				{
+					_putchar(' ');
+				}
+		}
+				
+			if (sum < 10)
+			{
+				_putchar('0' + sum)'
 			}
-		i++;
-		if (i > 9)
-		{
-			i = 0;
+			else
+			{
+				_putchar ((sum / 10) + '0');
+				_putchar((sum % 10) + '0');
+			}
 		}
-		}
-		target++;
-	}
+	_putchar('\n');
 }
