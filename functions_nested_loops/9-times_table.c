@@ -12,9 +12,6 @@ void times_table(void)
 	int j;
 	int sum;
 
-	i = 0;
-	j = 0;
-
 	for (i = 0; i <= 9; i++)
 	{
 		for (j = 0; j <= 9; j++)
@@ -22,27 +19,27 @@ void times_table(void)
 			sum = i * j;
 			if (j == 0)
 			{
-				_putchar('0' + sum);
+			_putchar('0' + sum);
 			}
-			else
-			{
-				_putchar(',');
-				_putchar(' ');
-				}
-				if (sum < 10)
+				if (sum < 10 && j != 0)
 				{
+					_putchar(',');
 					_putchar(' ');
+					_putchar(' ');
+					_putchar('0' + sum);
+				}
+				else if (sum >= 10)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar((sum / 10) + '0');
+					_putchar((sum % 10) + '0');
+				}
+				if (j > 9)
+				{
+					j = 0;
 				}
 		}
-			if (sum < 10)
-			{
-				_putchar('0' + sum);
-			}
-			else
-			{
-				_putchar ((sum / 10) + '0');
-				_putchar((sum % 10) + '0');
-			}
-		}
-	_putchar('\n');
+			_putchar('\n');
+	}
 }
