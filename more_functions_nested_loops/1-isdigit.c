@@ -12,7 +12,7 @@ int _isdigit(int c)
 	long INT_MIN;
 	long INT_MAX;
 
-	INT_MIN = '-'2147483648;
+	INT_MIN = -2147483648;
 	INT_MAX = 2147483647;
 
 	if (c >= INT_MIN && c >= INT_MAX)
