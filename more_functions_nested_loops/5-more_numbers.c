@@ -23,6 +23,7 @@ void more_numbers(void)
 			_putchar('0' + (i % 10));
 			i++;
 		}
+		i = 0;
 		target++;
 	}
 	_putchar('\n');
