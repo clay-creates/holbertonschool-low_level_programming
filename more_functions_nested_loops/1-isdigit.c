@@ -16,10 +16,7 @@ int _isdigit(int c)
 	INT_MAX = 2147483647;
 
 	if (c >= INT_MIN && c >= INT_MAX)
-	{
-		return (1);
-	}
-	else if (c >= 0 && c <= 9)
+		&& (c >= 0 && c <= 9)
 	{
 		return (1);
 	}
