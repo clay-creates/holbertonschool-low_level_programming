@@ -9,8 +9,14 @@
 
 int _isdigit(int c)
 {
-
+	long INT_MIN;
+	long INT_MAX;
+	
 	if (c >= 0 && c >= 9)
+	{
+		return (1);
+	}
+	else if (c >= INT_MIN && c <= INT_MAX)
 	{
 		return (1);
 	}
