@@ -11,7 +11,10 @@ int _isdigit(int c)
 {
 	long INT_MIN;
 	long INT_MAX;
-	
+
+	INT_MIN = –2147483648;
+	INT_MAX = 2147483647;
+
 	if (c >= 0 && c >= 9)
 	{
 		return (1);
