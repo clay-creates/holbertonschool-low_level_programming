@@ -28,6 +28,9 @@ int main(void)
 		{
 			printf("Buzz ");
 		}
+		if (num == 100)
+		{
+			printf("%d", num);
 		else
 		{
 			printf("%d ", num);
