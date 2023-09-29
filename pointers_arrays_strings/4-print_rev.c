@@ -19,5 +19,5 @@ void print_rev(char *s)
 		reversed[j] = s[i];
 	}
 	reversed[j] = '\0';
-	printf("\n");
+	printf("%s\n", reversed);
 }
