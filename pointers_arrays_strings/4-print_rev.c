@@ -9,15 +9,15 @@
 void print_rev(char *s)
 {
 	int length = strlen(s);
-	char reversed[length + 1];
 	int i, j;
 
-	j = 0;
-
-	for (i = length - 1; i >= 0; i--)
+	for (i = 0; i < j; i++)
 	{
-		j++;
-		reversed[j] = s[i];
+		j = length - 1;
+		j--;
+		char temp = s[i];
+		s[i] = s[j];
+		s[j] = temp;
 	}
 	reversed[j] = '\0';
 	printf("%s\n", reversed);
