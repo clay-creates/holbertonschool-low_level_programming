@@ -12,7 +12,9 @@ void print_rev(char *s)
 	char reversed[length + 1];
 	int i, j;
 
-	for (i = length - 1; j = 0; i >= 0)
+	j = 0;
+
+	for (i = length - 1; i >= 0)
 	{
 		i--;
 		j++;
