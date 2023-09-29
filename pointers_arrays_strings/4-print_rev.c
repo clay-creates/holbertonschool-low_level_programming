@@ -9,15 +9,13 @@
 void print_rev(char *s)
 {
 	int length = strlen(s);
-	char reversed;
+	char reversed[length + 1];
 	int i, j;
 
 	j = 0;
-	reversed = length + 1;
 
-	for (i = length - 1; i >= 0;)
+	for (i = length - 1; i >= 0; i--)
 	{
-		i--;
 		j++;
 		reversed[j] = s[i];
 	}
