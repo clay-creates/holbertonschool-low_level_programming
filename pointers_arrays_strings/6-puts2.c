@@ -16,7 +16,7 @@ void puts2(char *str)
 	}
 	if (*str == str[232])
 	{
-		_putchar(str[i - 6];
+		_putchar(str[i - 6]);
 	}
 	_putchar('\n');
 }
