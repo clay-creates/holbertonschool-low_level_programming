@@ -14,8 +14,9 @@ void puts2(char *str)
 		_putchar(str[i]);
 		i += 2;
 	}
-	if (str[i] == '\0')
+	if (*str == str[232])
 	{
-		_putchar('\n');
+		_putchar(str[i - 6];
 	}
+	_putchar('\n');
 }
