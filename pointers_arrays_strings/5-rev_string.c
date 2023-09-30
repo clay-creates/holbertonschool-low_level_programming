@@ -14,8 +14,11 @@ void rev_string(char *s)
 		i++;
 	}
 
-	int start = 0;
-	int end = i - 1;
+	int start;
+	int end;
+
+	start = 0;
+	end = i - 1;
 
 	while  (start < end)
 	{
