@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 /**
  * puts_half - prints half a string, followed by a newline
@@ -8,7 +9,7 @@
 void puts_half(char *str)
 {
 	int i;
-	int length = _strlen(str);
+	int length = strlen(str);
 
 	if (length % 2 == 0)
 	{
