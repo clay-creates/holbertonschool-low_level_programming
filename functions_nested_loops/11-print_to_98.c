@@ -11,7 +11,7 @@ void print_to_98(int n)
 {
 	int i = 98;
 
-	while (n < i)
+	while (n <= i)
 	{
 		printf("%d, ", n);
 		n++;
@@ -20,5 +20,10 @@ void print_to_98(int n)
 			printf("%d", n);
 		}
 	}
+	while (n > i)
+	{
+		printf("%d, ", n);
+		n--;
+	}
 	printf("\n");
-}	
+}
