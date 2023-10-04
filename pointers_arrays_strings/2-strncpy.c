@@ -20,6 +20,10 @@ char *_strncpy(char *dest, char *src, int n)
 			break;
 		}
 	}
-	*dest = '\0';
+	while (n > 0)
+	{
+		*dest++ = '\0';
+		n--;
+	}
 	return (dest_start);
 }
