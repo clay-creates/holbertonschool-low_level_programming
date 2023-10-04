@@ -18,6 +18,6 @@ char *_strncpy(char *dest, char *src, int n)
 		*dest++ = *src++;
 		n--;
 	}
-	dest = '\n';
+	*dest = '\n';
 	return (dest_start);
 }
