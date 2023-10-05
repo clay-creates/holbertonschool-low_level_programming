@@ -33,7 +33,7 @@ char *leet(char *str)
 		{
 			str[i] = '1';
 		}
-		i++
+		i++;
 	}
 	return (str);
 }
