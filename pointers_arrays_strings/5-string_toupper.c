@@ -3,7 +3,8 @@
 
 /**
  * string_toupper - changes all lowercase letters to uppercase
- * 
+ * @str: string to be capitolized
+ *
  * Return: returns upper
  */
 
