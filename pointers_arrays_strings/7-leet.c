@@ -10,30 +10,21 @@
 char *leet(char *str)
 {
 	int i;
+	char leetMap[128] = {0};
 
-	for (i = 0; str[i] != '\0';)
+	leetMap['a'] = leetMap['A'] = '4';
+	leetMap['e'] = leetMap['E'] = '3';
+	leetMap['o'] = leetMap['O'] = '0';
+	leetMap['t'] = leetMap['T'] = '7';
+	leetMap['l'] = leetMap['L'] = '1';
+
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		if (str[i] == 'a' || str[i] == 'A')
+		if (leetMap[(int)str[i]] != 0)
 		{
-			str[i] = '4';
+			str[i] = leetMap[(int)str[i]];
 		}
-		else if (str[i] == 'e' || str[i] == 'E')
-		{
-			str[i] = '3';
-		}
-		else if (str[i] == 'o' || str[i] == 'O')
-		{
-			str[i] = '0';
-		}
-		else if (str[i] == 't' || str[i] == 'T')
-		{
-			str[i] = '7';
-		}
-		else if (str[i] == 'l' || str[i] == 'L')
-		{
-			str[i] = '1';
-		}
-		i++;
 	}
+
 	return (str);
 }
