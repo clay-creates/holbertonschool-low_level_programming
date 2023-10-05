@@ -14,6 +14,10 @@ char *cap_string(char *str)
 
 	for (i = 0; str[i] != '\0';)
 	{
+		if (str[0] <= 'a' && str[0] >= 'z')
+		{
+			str[0] = toupper(str[0])
+		}
 		if (str[i] == 9 ||
 			str[i] == 10 ||
 			str[i] == 32 ||
