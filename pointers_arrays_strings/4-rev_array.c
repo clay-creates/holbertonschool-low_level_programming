@@ -19,10 +19,8 @@ void reverse_array(int *a, int n)
 
 	if (n > 0)
 	{
-		reverse = a;
+		reverse = *a;
 		a++;
 		n--;
 	}
-
-	return (reverse);
 }
