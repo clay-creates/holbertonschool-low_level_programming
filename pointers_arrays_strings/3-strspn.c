@@ -11,10 +11,11 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int total = 0;
-	char *aptr = accept;
 
 	while (*s != '\0')
 	{
+		char *aptr = accept;
+
 		while (*aptr != '\0')
 		{
 			if (*s == *aptr)
