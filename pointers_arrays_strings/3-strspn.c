@@ -10,21 +10,25 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	int i;
-	char *sptr = s;
+	unsigned int total = 0;
 	char *aptr = accept;
-	unsigned int total;
 
-	for (i = 0; *s != '\0'; i++)
+	while (*s != '\0')
 	{
-		if (accept == s)
+		while (*aptr != '\0')
 		{
-			total++;
+			if (*s == *aptr)
+			{
+				total++;
+			}
+			aptr++;
 		}
-		else if (accept != s)
+		if (*aptr == '\0')
 		{
-			break;
 			return (total);
 		}
+		s++;
 	}
+	return (total);
 }
+
