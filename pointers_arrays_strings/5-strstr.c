@@ -19,7 +19,7 @@ char *_strstr(char *haystack, char *needle)
 		hptr = haystack;
 		nptr = needle;
 
-		while (*nptr != '\0' && *htpr == *nptr)
+		while (*nptr != '\0' && *hptr == *nptr)
 		{
 			hptr++;
 			nptr++;
