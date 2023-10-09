@@ -13,6 +13,7 @@ char *_strstr(char *haystack, char *needle)
 {
 	char *hptr, *nptr;
 
+
 	while (*haystack != '\0')
 	{
 		hptr = haystack;
@@ -22,7 +23,10 @@ char *_strstr(char *haystack, char *needle)
 		{
 			if (*hptr == *nptr)
 			{
-				return (haystack);
+				if (*hptr + 1 == *nptr + 1)
+				{
+					return (haystack);
+				}
 			}
 			hptr++;
 			nptr++;
