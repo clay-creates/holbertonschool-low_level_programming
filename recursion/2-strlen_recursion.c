@@ -4,7 +4,6 @@
 /**
  * _strlen_recursion - returns the length of a string
  * @s: string to be counted
- * @count: count of characters
  *
  * Return: returns count once recursion is finished
  */
