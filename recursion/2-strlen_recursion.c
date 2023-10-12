@@ -9,8 +9,10 @@
  * Return: returns count once recursion is finished
  */
 
-int _strlen_recursion(char *s, int count)
+int _strlen_recursion(char *s)
 {
+	int count = 0;
+
 	if (*s == '\0')
 	{
 		return (count);
