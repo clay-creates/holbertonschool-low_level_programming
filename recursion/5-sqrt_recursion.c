@@ -2,6 +2,7 @@
 
 /**
  * _sqrt_recursion - returns the natural sqaure root of a number
+ *
  * @n: number to find square root of
  *
  * Return: returns integer of sqare root, or -1 if not
@@ -43,7 +44,7 @@ int find_sqrt(int x, int y)
 	{
 		return (y);
 	}
-	else 
+	else
 	{
 		return (find_sqrt(x, y + 1));
 	}
