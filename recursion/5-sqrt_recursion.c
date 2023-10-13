@@ -7,11 +7,13 @@
  * Return: returns integer of sqare root, or -1 if not
  */
 
+int find_sqrt(int x, int y);
+
 int _sqrt_recursion(int n)
 {
 	if (n < 0)
 	{
-		return (-1)
+		return (-1);
 	}
 	else if (n == 0 || n == 1)
 	{
@@ -19,7 +21,7 @@ int _sqrt_recursion(int n)
 	}
 	else
 	{
-		return (_find_sqrt(n, 2));
+		return (find_sqrt(n, 2));
 	}
 }
 
