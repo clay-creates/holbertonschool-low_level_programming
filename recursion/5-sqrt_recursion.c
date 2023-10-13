@@ -26,7 +26,8 @@ int find_sqrt(int n, int low, int high)
 
 	int mid;
 	mid = (low + (high - low) / 2);
-	int square = (mid * mid);
+	int square; 
+	square = (mid * mid);
 
 	if (square == n)
 	{
