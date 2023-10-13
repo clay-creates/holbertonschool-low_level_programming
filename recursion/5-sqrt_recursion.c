@@ -7,7 +7,7 @@
  * Return: returns integer of sqare root, or -1 if not
  */
 
-int _sqrt_recurion(int n)
+int _sqrt_recursion(int n)
 {
 	if (n == 1)
 	{
