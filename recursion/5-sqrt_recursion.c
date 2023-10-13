@@ -28,7 +28,9 @@ int _sqrt_recursion(int n)
 
 /**
  * find_sqrt - provides calculation for recursion
+ *
  * @x: n from _sqrt_recursion
+ *
  * @y: will be returned as the square root if there is a root
  *
  * Return: returns y if root exists, or -1 if not
