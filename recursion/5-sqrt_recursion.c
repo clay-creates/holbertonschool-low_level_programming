@@ -15,6 +15,9 @@ int _sqrt_recursion(int n)
 
 int find_sqrt(int n, int low, int high)
 {
+	int mid = low + (high - low) / 2;
+	int square = mid * mid;
+
 	if (n < 0)
 	{
 		return (-1);
@@ -23,11 +26,6 @@ int find_sqrt(int n, int low, int high)
 	{
 		return (-1);
 	}
-
-	int mid;
-	mid = (low + (high - low) / 2);
-	int square; 
-	square = (mid * mid);
 
 	if (square == n)
 	{
