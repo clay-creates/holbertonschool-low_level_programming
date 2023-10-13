@@ -45,6 +45,6 @@ int find_sqrt(int x, int y)
 	}
 	else 
 	{
-		return (_find_sqrt(x, y + 1));
+		return (find_sqrt(x, y + 1));
 	}
 }
