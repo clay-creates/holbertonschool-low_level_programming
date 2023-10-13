@@ -1,5 +1,7 @@
 #include "main.h"
 
+int find_prime(int x, int y);
+
 /**
  * is_prime_number - checks to see if input is a prime number
  * @n: number to be checked
