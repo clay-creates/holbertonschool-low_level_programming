@@ -6,37 +6,43 @@
  *
  * Return: returns integer of sqare root, or -1 if not
  */
-int find_sqrt(int n, int low, int high);
 
 int _sqrt_recursion(int n)
 {
-	return (find_sqrt(n, 0, n));
-}
-
-int find_sqrt(int n, int low, int high)
-{
-	int mid = low + (high - low) / 2;
-	int square = mid * mid;
-
 	if (n < 0)
 	{
-		return (-1);
+		return (-1)
 	}
-	if (low > high)
+	else if (n == 0 || n == 1)
 	{
-		return (-1);
-	}
-
-	if (square == n)
-	{
-		return (mid);
-	}
-	else if (square < mid)
-	{
-		return (find_sqrt(n, mid + 1, high));
+		return (n);
 	}
 	else
 	{
-		return (find_sqrt(n, low, mid - 1));
+		return (_find_sqrt(n, 2));
+	}
+}
+
+/**
+ * find_sqrt - provides calculation for recursion
+ * @x: n from _sqrt_recursion
+ * @y: will be returned as the square root if there is a root
+ *
+ * Return: returns y if root exists, or -1 if not
+ */
+
+int find_sqrt(int x, int y)
+{
+	if (y >= x / 2)
+	{
+		return (-1);
+	}
+	else if (y * y == x)
+	{
+		return (y);
+	}
+	else 
+	{
+		return (_find_sqrt(x, y + 1));
 	}
 }
