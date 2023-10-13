@@ -6,6 +6,7 @@
  *
  * Return: returns integer of sqare root, or -1 if not
  */
+int find_sqrt(int n, int low, int high);
 
 int _sqrt_recursion(int n)
 {
