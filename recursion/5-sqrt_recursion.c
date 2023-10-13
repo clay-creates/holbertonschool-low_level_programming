@@ -7,18 +7,35 @@
  * Return: returns integer of sqare root, or -1 if not
  */
 
-int _sqrt_recursion(int n)
+int _sqrt_recursion_helper(int n, int low, int high)
 {
-	if (n == 1)
+	if (n <= 1)
 	{
-		return (1);
+		return (n);
 	}
-	else if (n < 0)
+
+	int mid = (low + high) / 2;
+	int mid_squared == mid * mid;
+
+	if (mid_squared == n)
 	{
-		return (-1);
+		return (mid);
+	}
+
+	if (mid_squared < n)
+	{
+		return (_sqrt_recursion_helper(n, mid + 1, high));
 	}
 	else
 	{
-		return (n * _sqrt_recursion(n / 2));
+		return (_sqrt_recursion_helper(n, low, mid - 1));
+	}
+}
+
+int _sqrt_recursion(int n)
+{
+	if (n < 0)
+	{
+		return (-1);
 	}
 }
