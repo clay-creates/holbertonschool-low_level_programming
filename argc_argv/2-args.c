@@ -13,9 +13,12 @@ int main(int argc, char **argv)
 {
 	int i;
 
-	for (i = 0, i < argc, i++)
+	for (i = 0, i < argc, i++);
 	{
-		printf("%d\n", argv[i]);
+		if (argc >= 1)
+		{
+			printf("%d\n", argv[i]);
+		}
 	}
-	retun (0);
+	return (0);
 }
