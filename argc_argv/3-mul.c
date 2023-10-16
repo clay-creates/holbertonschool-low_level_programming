@@ -1,8 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
-
-int mul(int a, int  b);
 
 /**
  * main - entry point, muliplies two numbers
@@ -14,9 +11,9 @@ int mul(int a, int  b);
 
 int main(int argc, char **argv)
 {
-	int num1 = atoi(argv[1]);
-	int num2 = atoi(argv[2]);
-	int result = mul(num1, num2);
+	int num1;
+	int num2;
+	int result = num1 * num2;
 
 	if (argc < 3)
 	{
@@ -24,20 +21,9 @@ int main(int argc, char **argv)
 		return (1);
 	}
 
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[2]);
+
 	printf("%d\n", result);
 	return (0);
-
-}
-
-/**
- * mul - multiplies two integers
- * @a: int one
- * @b: int two
- *
- * Return: return result for main
- */
-
-int mul(int a, int b)
-{
-	return (a * b);
 }
