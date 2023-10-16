@@ -14,13 +14,16 @@ int mul(int a, int b);
 
 int main(int argc, char **argv)
 {
-	mul(*argv[1], *argv[2]);
+	int num1 = atoi(argv[1]);
+	int num2 = atoi(argv[2]);
+	int result = mul(num1, num2);
 
-	if (argc < 2)
+	if (argc < 3)
 	{
 		printf("Error");
 		printf("\n");
 		return (1);
 	}
+	printf("%d\n", result);
 	return (0);
 }
