@@ -2,8 +2,6 @@
 #include <stdlib.h>
 #include "main.h"
 
-int mul(int a, int b);
-
 /**
  * main - entry point, muliplies two numbers
  * @argc: argument count
