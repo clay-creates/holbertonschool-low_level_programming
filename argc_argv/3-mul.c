@@ -18,7 +18,7 @@ int main(int argc, char **argv)
 	int num2 = atoi(argv[2]);
 	int result = mul(num1, num2);
 
-	if (argc < 3)
+	if (argc <= 3)
 	{
 		printf("Error");
 		printf("\n");
@@ -27,6 +27,13 @@ int main(int argc, char **argv)
 	printf("%d\n", result);
 	return (0);
 }
+/**
+ * mul - multiplies two integers
+ * @a: int one
+ * @b: int two
+ *
+ * Return: return result for main
+ */
 
 int mul(int a, int b)
 {
