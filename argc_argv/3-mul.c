@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
+
+int mul(int a, int  b);
 
 /**
  * main - entry point, muliplies two numbers
@@ -24,4 +25,9 @@ int main(int argc, char **argv)
 	}
 	printf("%d\n", result);
 	return (0);
+}
+
+int mul(int a, int b)
+{
+	return (a * b);
 }
