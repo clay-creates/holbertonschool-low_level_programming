@@ -14,19 +14,20 @@ int mul(int a, int  b);
 
 int main(int argc, char **argv)
 {
+	if (argc < 3)
+	{
+		printf("Error\n");
+		return (1);
+	}
+
 	int num1 = atoi(argv[1]);
 	int num2 = atoi(argv[2]);
 	int result = mul(num1, num2);
 
-	if (argc < 3)
-	{
-		printf("Error");
-		printf("\n");
-		return (1);
-	}
 	printf("%d\n", result);
 	return (0);
 }
+
 /**
  * mul - multiplies two integers
  * @a: int one
