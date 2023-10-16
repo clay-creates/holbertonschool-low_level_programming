@@ -5,6 +5,8 @@
  * main - entry point, prints name of program
  * @argc: count of arguements
  * @argv: array of arguement names
+ *
+ * Return: returns 0 on success
  */
 
 int main(int argc, char **argv)
