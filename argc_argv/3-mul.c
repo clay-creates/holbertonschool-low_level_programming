@@ -14,7 +14,7 @@ int mul(int a, int b);
 
 int main(int argc, char **argv)
 {
-	int sum = mul(*argv[1], *argv[2]);
+	mul(*argv[1], *argv[2]);
 
 	if (argc < 2)
 	{
