@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include "main.h"
 
+int mul(int a, int b);
+
 /**
  * main - entry point, muliplies two numbers
  * @argc: argument count
@@ -10,10 +12,10 @@
  * Return: returns 0 on success
  */
 
-int main(int argc, char *argv)
+int main(int argc, char **argv)
 {
-	int mult1 = mult(argv[1]);
-	int mult2 = mult(argv[2]);
+	int mult1 = mul(argv[1]);
+	int mult2 = mul(argv[2]);
 
 	if (argc < 2)
 	{
