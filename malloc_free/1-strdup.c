@@ -12,12 +12,13 @@
 
 char *_strdup(char *str)
 {
+	int i;
+
 	if (str == NULL)
 	{
 		return (NULL);
 	}
 
-	int i;
 	char *string;
 	int length = strlen(str);
 
