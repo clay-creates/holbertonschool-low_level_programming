@@ -27,6 +27,11 @@ char *str_concat(char *s1, char *s2)
 
 	c_string = malloc((len1 + len2 + 1));
 
+	if (s1 == NULL || s2 == NULL)
+	{
+		printf("");
+	}
+
 	if (c_string == NULL)
 	{
 		return (NULL);
