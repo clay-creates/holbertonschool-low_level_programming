@@ -12,13 +12,20 @@
 
 char *_strdup(char *str)
 {
+	int i;
 	char *string;
+	int length = strlen(str);
 
-	string = malloc(str * sizeof(char));
+	string = malloc((length + 1) * sizeof(char));
 
 	if (str == NULL)
 	{
 		return (NULL);
+	}
+
+	for (i = 0; i <= length; i++)
+	{
+		string[i] = str[i];
 	}
 
 	return (string);
