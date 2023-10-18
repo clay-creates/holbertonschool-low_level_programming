@@ -30,5 +30,4 @@ char *_strdup(char *str)
 	}
 
 	return (string);
-	free(string);
 }
