@@ -17,20 +17,6 @@ char *str_concat(char *s1, char *s2)
 	int len1, len2;
 	char *c_string;
 
-	if (s1 == NULL || s2 == NULL)
-	{
-		return (NULL);
-	}
-
-	len1 = strlen(s1);
-	len2 = strlen(s2);
-
-	c_string = malloc((len1 + len2 + 1));
-	
-	if (c_string == NULL)
-	{
-		return (NULL);
-	}
 	if (s1 == NULL)
 	{
 		s1 = "";
@@ -38,6 +24,16 @@ char *str_concat(char *s1, char *s2)
 	if (s2 == NULL)
 	{
 		s2 = "";
+	}
+
+	len1 = strlen(s1);
+	len2 = strlen(s2);
+
+	c_string = malloc((len1 + len2 + 1));
+
+	if (c_string == NULL)
+	{
+		return (NULL);
 	}
 	for (i = 0; i < len1; i++)
 	{
