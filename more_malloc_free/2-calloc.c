@@ -11,10 +11,10 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int i;
+	unsigned int i;
 	unsigned int *array;
 
-	if (nmemb == NULL || size == NULL)
+	if (nmemb == 0 || size == 0)
 	{
 		return (NULL);
 	}
