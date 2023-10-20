@@ -11,8 +11,8 @@
 void *malloc_checked(unsigned int b)
 {
 	void *mptr;
- 
-	mptr = malloc(b * sizeof(int));
+
+	mptr = malloc(b);
 
 	if (mptr == NULL)
 	{
