@@ -1,4 +1,4 @@
-<h1>This is the README for Holbeton Low Level Programming - Structures & Typedef</h1>
+<h1>This is the README for Holberton Low Level Programming - Structures & Typedef</h1>
 
 <h2>Files in Directory</h2>
 
