@@ -33,9 +33,9 @@ int int_index(int *array, int size, int (*cmp)(int))
 	{
 		for (i = 0; i < size; i++)
 		{
-			if (array[i] == sizeof(int))
+			if (cmp(array[i]))
 			{
-				return (array[i]);
+				return (i);
 			}
 			else
 			{
