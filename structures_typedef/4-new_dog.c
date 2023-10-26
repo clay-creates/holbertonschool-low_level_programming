@@ -11,19 +11,19 @@
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-    dog_t *da_dog;
+	dog_t *da_dog;
 
-    da_dog = malloc(sizeof(dog_t));
+	da_dog = malloc(sizeof(dog_t));
 
-    if (da_dog == NULL)
-    {
-        free(da_dog);
-        return (0);
-    }
+	if (da_dog == NULL)
+	{
+		free(da_dog);
+		return (0);
+	}
 
-    da_dog->name = name;
-    da_dog->age = age;
-    da_dog->owner = owner;
+	da_dog->name = name;
+	da_dog->age = age;
+	da_dog->owner = owner;
 
-    return (da_dog);
+	return (da_dog);
 }
