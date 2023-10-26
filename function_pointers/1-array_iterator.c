@@ -19,7 +19,7 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 		return;
 	}
 
-	if (size == NULL)
+	if (!size)
 	{
 		return;
 	}
