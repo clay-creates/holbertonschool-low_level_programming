@@ -1,6 +1,6 @@
-<h1>This is the README for Holberton Low Level Programming Function Pointers</h1>
+<h1 align="center">Holberton Low Level Programming Function Pointers</h1>
 
-<h2>Files in Directory</h2>
+<h2 align="center">Files in Directory</h2>
 
 - function_pointers.h (header file with prototypes)
 - 0-print_name.c (function that prints a name)
@@ -11,4 +11,4 @@
 - 3-op_functions.c (contains add, sub, mul, div, mod)
 - 3-get_op_functions.c (function that selects correct function for task)
 
-<a href="https://imgflip.com/i/83uu6r"><img src="https://i.imgflip.com/83uu6r.jpg" title="made at imgflip.com"/></a><div><a href="https://imgflip.com/memegenerator">from Imgflip Meme Generator</a></div>
+<p align="center"><a href="https://imgflip.com/i/83uu6r"><img src="https://i.imgflip.com/83uu6r.jpg" title="made at imgflip.com"/></a><div><a href="https://imgflip.com/memegenerator">from Imgflip Meme Generator</a></div></p>
