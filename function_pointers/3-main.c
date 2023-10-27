@@ -21,7 +21,7 @@ int main(int argc, char **argv)
 
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
-	*operator= argv[2][0];
+	*operator = argv[2][0];
 	calc_func = get_op_func(operator);
 
 	if (argc < 4)
@@ -29,7 +29,7 @@ int main(int argc, char **argv)
 		return (1);
 	}
 
-	if (operator== NULL)
+	if (operator == NULL)
 	{
 		return (2);
 	}
