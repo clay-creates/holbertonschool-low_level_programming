@@ -13,11 +13,11 @@ int (*get_op_func(char *s))(int, int);
 int main(int argc, char **argv)
 {
 	int num1, num2, result;
-	char *operator;
+	char *operator= NULL;
 
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
-	*operator= * argv[2];
+	*operator= argv[2][0];
 	int (*calc_func)(int, int) = get_op_func(operator);
 
 	if (argc < 4)
