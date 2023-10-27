@@ -12,30 +12,30 @@ int (*get_op_func(char *s))(int, int);
 
 int main(int argc, char **argv)
 {
-    int num1, num2, result;
-    char *operator;
+	int num1, num2, result;
+	char *operator;
 
-    if (argc < 4)
-    {
-        return (1);
-    }
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[3]);
+	*operator= * argv[2];
+	int (*calc_func)(int, int) = get_op_func(operator);
 
-    num1 = atoi(argv[1]);
-    num2 = atoi(argv[3]);
-    operator= * argv[2];
-    int (*calc_func)(int, int) = get_op_func(operator);
+	if (argc < 4)
+	{
+		return (1);
+	}
 
-    if (operator== NULL)
-    {
-        return (2);
-    }
+	if (operator== NULL)
+	{
+		return (2);
+	}
 
-    if (calc_func == NULL)
-    {
-        return (3);
-    }
+	if (calc_func == NULL)
+	{
+		return (3);
+	}
 
-    result = calc_func(num1, num2);
+	result = calc_func(num1, num2);
 
-    return (result);
+	return (result);
 }
