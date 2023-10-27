@@ -16,7 +16,7 @@ int (*get_op_func(char *s))(int, int);
 int main(int argc, char **argv)
 {
 	int num1, num2, result;
-	char *operator= NULL;
+	char *operator = NULL;
 	int (*calc_func)(int, int);
 
 	num1 = atoi(argv[1]);
