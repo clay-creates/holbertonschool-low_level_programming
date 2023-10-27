@@ -1,4 +1,4 @@
-#include "function_pointers.h"
+#include "calc.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -17,7 +17,7 @@ int op_mod(int a, int b);
 
 int (*get_op_func(char *s))(int, int)
 {
-	int i;
+	int i = 0;
 	op_t ops[] = {
 		{"+", op_add},
 		{"-", op_sub},
