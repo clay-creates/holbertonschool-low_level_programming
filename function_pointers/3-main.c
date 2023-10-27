@@ -7,6 +7,8 @@ int (*get_op_func(char *s))(int, int);
 
 /**
  * main - entry point
+ * @argc: argument count
+ * @argv: argument names
  *
  * Return: returns 0 on success, or 1 on fail
  */
