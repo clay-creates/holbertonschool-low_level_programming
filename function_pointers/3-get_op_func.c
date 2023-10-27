@@ -13,7 +13,7 @@ int op_mod(int a, int b);
  * get_op_func - function to select correct funtion to use
  * @s: operator passed as argument to program
  *
- * Return: returns a pointer to function corresponding to operator given as parameter
+ * Return: returns a pointer to function for calc
  */
 
 int (*get_op_func(char *s))(int, int)
