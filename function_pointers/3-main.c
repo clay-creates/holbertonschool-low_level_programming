@@ -23,13 +23,12 @@ int main(int argc, char **argv)
     num1 = atoi(argv[1]);
     num2 = atoi(argv[3]);
     operator= * argv[2];
+    int (*calc_func)(int, int) = get_op_func(operator);
 
     if (operator== NULL)
     {
         return (2);
     }
-
-    int (*calc_func)(int, int) = get_op_func(operator);
 
     if (calc_func == NULL)
     {
