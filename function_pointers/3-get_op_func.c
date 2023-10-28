@@ -31,9 +31,11 @@ int (*get_op_func(char *s))(int, int)
 	{
 		if (strcmp(ops[i].op, s) == 0)
 		{
+			printf("Operator was found");
 			return (ops[i].f);
 		}
 		i++;
 	}
+	printf("Operator was not found");
 	return (NULL);
 }
