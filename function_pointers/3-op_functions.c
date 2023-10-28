@@ -12,11 +12,11 @@
 
 int op_add(int a, int b)
 {
-	if (a == NULL)
+	if (!a)
 	{
 		a = 0;
 		printf("Integer A was NULL, treated as 0 for calc");
-		if (b == NULL)
+		if (!b)
 		{
 			b = 0;
 			printf("Integer B was NULL, treated as 0 for calc");
@@ -40,11 +40,11 @@ int op_add(int a, int b)
 
 int op_sub(int a, int b)
 {
-	if (a == NULL)
+	if (!a)
 	{
 		a = 0;
 		printf("Integer A was NULL, treated as 0 for calc");
-		if (b == NULL)
+		if (!b)
 		{
 			b = 0;
 			printf("Integer B was NULL, treated as 0 for calc");
@@ -68,11 +68,11 @@ int op_sub(int a, int b)
 
 int op_mul(int a, int b)
 {
-	if (a == NULL)
+	if (!a)
 	{
 		a = 0;
 		printf("Integer A was NULL, treated as 0 for calc");
-		if (b == NULL)
+		if (!b)
 		{
 			b = 0;
 			printf("Integer B was NULL, treated as 0 for calc");
