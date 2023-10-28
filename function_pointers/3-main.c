@@ -44,6 +44,6 @@ int main(int argc, char **argv)
 
 	result = calc_func(num1, num2);
 
-	printf("Result calculated");
+	printf("Result calculated: %d\n", result);
 	return (result);
 }
