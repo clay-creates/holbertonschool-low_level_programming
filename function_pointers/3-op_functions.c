@@ -57,7 +57,7 @@ int op_div(int a, int b)
 	}
 	else
 	{
-		return (NULL);
+		return (1);
 	}
 }
 
@@ -77,6 +77,6 @@ int op_mod(int a, int b)
 	}
 	else
 	{
-		return (NULL);
+		return (1);
 	}
 }
