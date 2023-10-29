@@ -25,20 +25,19 @@ int main(int argc, char **argv)
 	if (argc < 4)
 	{
 		/*printf("Too few arguments");- Debug Print */
-		return ("Error");
-		return (argv[1]);
+		return (1);
 	}
 
 	if (operator== NULL)
 	{
 		/*printf("Operator not found");- Debug Print */
-		return ("Error");
+		return (2);
 	}
 
 	if (calc_func == NULL)
 	{
 		/*printf("Calc_func was not assigned");- Debug Print */
-		return ("Error");
+		return (3);
 	}
 
 	num1 = atoi(argv[1]);
