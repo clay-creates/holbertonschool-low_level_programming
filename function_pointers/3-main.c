@@ -16,12 +16,12 @@ int (*get_op_func(char *s))(int, int);
 int main(int argc, char **argv)
 {
 	int num1, num2, result;
-	char *operator = NULL;
+	char *operator= NULL;
 	int (*calc_func)(int, int);
 
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
-	operator = argv[2];
+	operator= argv[2];
 	calc_func = get_op_func(operator);
 
 	if (argc < 4)
@@ -30,7 +30,7 @@ int main(int argc, char **argv)
 		return (1);
 	}
 
-	if (operator == NULL)
+	if (operator== NULL)
 	{
 		/*printf("Operator not found");- Debug Print */
 		return (2);
@@ -44,6 +44,6 @@ int main(int argc, char **argv)
 
 	result = calc_func(num1, num2);
 
-	printf(%d\n", result);
+	printf("%d\n", result);
 	return (result);
 }
