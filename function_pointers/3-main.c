@@ -26,19 +26,19 @@ int main(int argc, char **argv)
 
 	if (argc < 4)
 	{
-		printf("Too few arguments");
+		/*printf("Too few arguments");- Debug Print */
 		return (1);
 	}
 
 	if (operator== NULL)
 	{
-		printf("Operator not found");
+		/*printf("Operator not found");- Debug Print */
 		return (2);
 	}
 
 	if (calc_func == NULL)
 	{
-		printf("Calc_func was not assigned");
+		/*printf("Calc_func was not assigned");- Debug Print */
 		return (3);
 	}
 
