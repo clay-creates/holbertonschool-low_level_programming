@@ -19,8 +19,6 @@ int main(int argc, char **argv)
 	char *operator= NULL;
 	int (*calc_func)(int, int);
 
-	num1 = atoi(argv[1]);
-	num2 = atoi(argv[3]);
 	operator= argv[2];
 	calc_func = get_op_func(operator);
 
@@ -41,6 +39,9 @@ int main(int argc, char **argv)
 		/*printf("Calc_func was not assigned");- Debug Print */
 		return (3);
 	}
+
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[3]);
 
 	result = calc_func(num1, num2);
 
