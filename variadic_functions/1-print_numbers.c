@@ -25,5 +25,6 @@ void print_numbers(const char *space, const unsigned int n, ...)
     {
         printf("%c", ap);
     }
+    va_end(ap);
     printf("\n");
 }
