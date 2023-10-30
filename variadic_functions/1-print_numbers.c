@@ -23,7 +23,7 @@ void print_numbers(const char *space, const unsigned int n, ...)
 
     for (i = 0; i < n; i++)
     {
-        printf("%c", ap);
+        printf("%s", ap);
     }
     va_end(ap);
     printf("\n");
