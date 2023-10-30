@@ -16,14 +16,21 @@ void print_numbers(const char *space, const unsigned int n, ...)
 
     va_start(ap, n);
 
-    if (space == NULL)
-    {
-        space = "";
-    }
-
     for (i = 0; i < n; i++)
     {
-        printf("%s", ap);
+        printf("%d", va_arg(ap, int));
+
+        if (i < n - 1)
+        {
+            if (space != NULL)
+            {
+                printf("%s", space);
+                else
+                {
+                    printf("");
+                }
+            }
+        }
     }
     va_end(ap);
     printf("\n");
