@@ -11,42 +11,42 @@
 
 void print_strings(const char *space, const unsigned int n, ...)
 {
-    unsigned int i;
-    va_list ap;
-    char *str;
+	unsigned int i;
+	va_list ap;
+	char *str;
 
-    va_start(ap, n);
+	va_start(ap, n);
 
-    if (space == NULL)
-    {
-        space = "";
-    }
+	if (space == NULL)
+	{
+		space = "";
+	}
 
-    for (i = 0; i < n; i++)
-    {
-        str = va_arg(ap, char *);
+	for (i = 0; i < n; i++)
+	{
+		str = va_arg(ap, char *);
 
-        if (str == NULL)
-        {
-            printf("(nil)");
-        }
-        else
-        {
-            printf("%s", str);
-        }
+		if (str == NULL)
+		{
+			printf("(nil)");
+		}
+		else
+		{
+			printf("%s", str);
+		}
 
-        if (i < n - 1)
-        {
-            if (space != NULL)
-            {
-                printf("%s", space);
-            }
-            else
-            {
-                printf(" ");
-            }
-        }
-    }
-    va_end(ap);
-    printf("\n");
+		if (i < n - 1)
+		{
+			if (space != NULL)
+			{
+				printf("%s", space);
+			}
+			else
+			{
+				printf(" ");
+			}
+		}
+	}
+	va_end(ap);
+	printf("\n");
 }
