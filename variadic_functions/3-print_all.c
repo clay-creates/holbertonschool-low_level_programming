@@ -15,7 +15,7 @@ void print_all(const char *const format, ...)
     char *str;
     char f_i, f_end;
 
-    f_i = format[i];
+    /*f_i = format[i];*/
     f_end = format[i + 1];
 
     va_start(args, format);
