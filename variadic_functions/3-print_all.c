@@ -13,7 +13,7 @@ void print_all(const char *const format, ...)
     va_list args;
     int i = 0;
     char *str;
-    char f_i, f_end;
+    char f_end;
 
     /*f_i = format[i];*/
     f_end = format[i + 1];
