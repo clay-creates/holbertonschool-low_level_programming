@@ -25,10 +25,10 @@ void print_numbers(const char *space, const unsigned int n, ...)
             if (space != NULL)
             {
                 printf("%s", space);
-                else
-                {
-                    printf("");
-                }
+            }
+            else
+            {
+                printf(" ");
             }
         }
     }
