@@ -18,7 +18,7 @@ void print_all(const char *const format, ...)
 
     while (format && format[i])
     {
-        if (i > 0)
+        if (format[i] != NULL)
         {
             printf(", ");
         }
