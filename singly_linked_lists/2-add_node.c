@@ -5,8 +5,8 @@
 
 /**
  * add_node - adds a new node at the beginning of a list_t list
- * @head:
- * @str:
+ * @head: starting point of linked list
+ * @str: character data in list
  *
  * Return: return pointer to list_t list
  */
@@ -32,6 +32,10 @@ list_t *add_node(list_t **head, const char *str)
     if (new->str == NULL)
     {
         return (NULL);
+    }
+    else
+    {
+        printf("[%d] %s\n", new->len, new->str);
     }
 
     new->next = *head;
