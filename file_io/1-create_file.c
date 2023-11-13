@@ -10,8 +10,7 @@
 
 int create_file(const char *filename, char *text_content)
 {
-	int fd, sz;
-	char *c;
+	int fd;
 	ssize_t written;
 
 	if (filename == NULL)
@@ -19,26 +18,15 @@ int create_file(const char *filename, char *text_content)
 		return (-1);
 	}
 
-	create(filename, O_RDWR | O_TRUNC);
-
-	fd = open(filename, O_RDWR | O_TRUNC);
+	fd = open(filename, O_RDWR | O_RDWR | O_TRUNC, 0600);
 
 	if (fd == -1)
 	{
 		return (-1);
 	}
 
-	c = (char *)calloc(text_content, sizeof(char));
-
-	if (c == NULL)
-	{
-		close(fd);
-		return (-1);
-	}
-
-	written = write(filename, c, sz);
+	written = write(fd, text_content, strlen(text_content));
 	close(fd);
-	free(c);
 
-	return (written);
+	return (written == -1 ? -1 : 1);
 }
