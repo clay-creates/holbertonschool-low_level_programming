@@ -45,4 +45,17 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
         free(new);
         return (0);
     }
+
+    new->value = strdup(value);
+    if (new->value == NULL)
+    {
+        free(new->key);
+        free(new);
+        return (0);
+    }
+
+    new->next = ht->array[index];
+    ht->array = new;
+
+    return (1);
 }
