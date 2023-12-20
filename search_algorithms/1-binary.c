@@ -8,7 +8,9 @@
 
 void print_array(int *array, size_t size)
 {
-    for (size_t i = 0; i < size; i++)
+    size_t i;
+
+    for (i = 0; i < size; i++)
     {
         printf("%d ", array[i]);
     }
