@@ -36,6 +36,7 @@ int binary_search(int *array, size_t size, int value)
 		if (array[mid] == value)
 		{
 			printf("Found at index: %d\n", mid);
+			return (mid);
 		}
 
 		if (array[mid] < value)
