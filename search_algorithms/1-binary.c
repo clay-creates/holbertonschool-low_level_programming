@@ -33,6 +33,15 @@ int binary_search(int *array, size_t size, int value)
 
 	while (low <= high)
 	{
+		printf("Searching in array: ");
+		for (j = low; j <= high; j++)
+		{
+			printf("%d", array[j]);
+			if (j < high)
+				printf(", ");
+		}
+		printf("\n");
+
 		mid = low + (high - low) / 2;
 
 		if (array[mid] == value)
@@ -49,15 +58,6 @@ int binary_search(int *array, size_t size, int value)
 		{
 			high = mid - 1;
 		}
-
-		printf("Searching in array: ");
-		for (j = low; j <= high; j++)
-		{
-			printf("%d", array[j]);
-			if (j < high)
-				printf(", ");
-		}
-		printf("\n");
 	}
 
 	return -1;
